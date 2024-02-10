@@ -1,0 +1,148 @@
+
+@media screen and (max-width: 1200px) {
+  /* Hide desktop navigation and display hamburger menu */
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+   /* Adjust cover pic/slider width for mobile devices */
+   /* Adjust cover pic/slider width for mobile devices */
+  .cover-pic {
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: 100vw; /* Maintain aspect ratio */
+    max-height: 100vh; /* Ensure the pic/slider fits within the viewport height */
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+  .cover-pic-text-article {
+    position: absolute;
+    bottom: 20%;
+    left: 100%; /* Center the text horizontally */
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%; /* Ensure the text container spans the entire width of the cover pic */
+    max-width: 80%; /* Limit the width of the text container */
+  }
+
+  .cover-pic-text {
+    font-size: 3rem; /* Decrease font size for better responsiveness */
+    margin-bottom: 2rem; /* Decrease margin bottom for better spacing */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .cover-pic {
+    margin-left: 2rem; /* Adjust the margin to push the image to the right */
+  }
+
+  .cover-pic img.arrow {
+    display: none; /* Hide the arrow */
+  }
+}
+
+
+@media screen and (max-width:900px){
+
+
+  .arrow{
+    display: none;
+  }
+  /*about*/
+  
+  .cover-pic-text-container {
+    position: static;
+    display: flex;
+     /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the container */
+    text-align: center; /* Center text horizontally */
+    
+}
+  .cover-pic-text-article{
+    border: none;
+  }
+
+
+  .profile-container{
+    flex-wrap: wrap;
+  }
+
+
+  /*plans section*/
+  .plans-container{
+    flex-wrap: wrap;
+  }
+  .plan-card{
+    margin-left: 2rem;
+  }
+
+
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Center align content vertically */
+  height: auto; /* Allow the height to adjust based on content */
+  padding: 2rem 0; /* Add padding for spacing */
+}
+
+.contact-info-upper-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  background-color: #383333; /* Corrected syntax */
+  margin-left: 45px;
+  padding: 1rem;
+  max-width: 80%; /* Limit the width of the container */
+  width: 500px;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0; /* Adjust vertical margin */
+}
+
+.contact-info-container p {
+  font-size: 1rem; /* Adjust font size */
+  margin: 0; 
+  
+}
+
+.contact-icon {
+  cursor: pointer; /* Use pointer cursor for better usability */
+  height: auto; /* Allow the height to adjust based on content */
+  max-width: 2.5rem; /* Limit the width of the icons */
+}
+
+
+/* FOOTER SECTION */
+footer {
+  width: 100%; /* Set the width to 100% to fill the viewport */
+  max-width: 100%; /* Ensure the footer doesn't exceed the width of the viewport */
+  padding: 1rem; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center; /* Center align the content */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+}
+
+footer nav {
+  margin-bottom: 1rem;
+  margin-left: 1.3rem;
+}
+
+footer p {
+  margin: 0; /* Reset margin to remove any extra space */
+}
+
+
+
+
+}

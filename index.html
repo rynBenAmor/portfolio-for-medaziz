@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+   
+    <div class="nav-container">
+        <nav id="desktop-nav">
+            <div class="logo">Med Aziz Ch</div>
+            <div>
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <nav id="hamburger-nav">
+            <div class="logo">Med Aziz Ch</div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>        
+                <li><a href="#clients" onclick="toggleMenu()">Clients</a></li>
+                <li><a href="#plans" onclick="toggleMenu()">Plans</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="assets/cover-pic.jpg" alt="cover picture" class="cover-pic">
+
+            <div class="cover-pic-text-container">
+                <article class="cover-pic-text-article">
+                    <h1 class="cover-pic-text">Get <span>Big</span> </h1>
+                    <h1 class="cover-pic-text">Get <span>Better</span></h1>
+                </article>
+                <img src="assets/arrow-down.png" alt="arrow down icon" onclick="location.href='./#profile'" class="arrow icon">
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="profile">
+        <h1 class="title">Profile  </h1>
+        <div class="profile-container"> 
+            
+            <img src="assets/profile-pic.jpg" alt="prfile picture" class="profile-pic">
+            <div class="profile-description">
+                <p>Introducing <strong>Med Aziz Ch</strong> <br/> your dedicated gym coach with 8 years of experience. Made of 85 kg of lean muscle and hard work, he's more than just a coach,  he's your motivator, your mentor, and your biggest supporter. <br/>Passionate about fitness, nutrition, and helping you reach your goals, Med Aziz is here to guide you every step of the way. With his expertise and encouragement, you'll unlock your full potential and become the best version of yourself. So let's lace up those sneakers, hit the gym, and start your journey to a healthier, stronger you!</p>
+
+            </div>
+         </div>
+
+
+    </section>
+
+    <section id="clients">
+        <h1 class="title">Clients</h1>
+        <div class="profile-container">
+            <img src="assets/client-1.png" alt="my first client" class="profile-pic">
+            <img src="assets/client-2.png" alt="my second client" class="profile-pic">
+        </div>
+
+        <div class="profile-description">
+            <p>Med Aziz Ch has a remarkable track record of transforming individuals, regardless of their weight or height through his personalized coaching approach, he has helped countless clients achieve incredible results and reach milestones they never thought possible and so can you From shedding excess weight to building lean muscle, his clients emerge as different people both physically and mentally. With Med Aziz's guidance and support, they not only transform their bodies but also gain confidence, resilience, and a newfound zest for life. No matter where you start on your fitness journey, Med Aziz is dedicated to helping you become the best version of yourself.</p>
+        </div>
+
+
+    </section>
+    
+
+    <section id="plans">
+        <h1 class="title">Workout Plans  </h1>
+        <div class="plans-container">
+          <div class="plan-card">
+            <img src="assets/supplements-pic.jpg" alt="Supplements Picture">
+            <h2 class="plan-title">Supplement Guide</h2>
+          </div>
+          <div class="plan-card">
+            <img src="assets/coaching-pic.jpg" alt="In-person & Online Coaching Picture">
+            <h2 class="plan-title">In-person & Online Coaching</h2>
+          </div>
+          <div class="plan-card">
+            <img src="assets/meal-pic.jpg" alt="Meal Preparation and Planning Picture">
+            <h2 class="plan-title">Meal Preparation and Planning</h2>
+          </div>
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <h1 class="title">Contact</h1>
+        
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"/>
+              <p><a href="mailto:sprinterch012@gmail.com">sprinterch012@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/facebook.png"
+                alt="facebook icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.facebook.com/medaziz.ch.33"  target="_blank">Facebook</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img
+                  src="./assets/instagram.png"
+                  alt="instagram icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="https://www.instagram.com/med_aziiz_ch/"  target="_blank">Instagram</a></p>
+              </div>
+
+          </div>
+
+    </section>
+
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#client">Clients</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>The best time to start was yesterday. The next best time is now. - Unknown.</p>
+        <p>-Developed and designed &#169 Rayen ben amor-</p>
+      </footer>
+      
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
