@@ -8,21 +8,32 @@
     display: flex;
   }
 
-   /* Adjust cover pic/slider width for mobile devices */
-   /* Adjust cover pic/slider width for mobile devices */
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Adjust cover pic/slider width for mobile devices */
   .cover-pic {
-    width: 100vw; /* Set width to 100% of the viewport width */
-    height: 100vw; /* Maintain aspect ratio */
-    max-height: 100vh; /* Ensure the pic/slider fits within the viewport height */
+    top: 0;
+    left: 0;
+    max-width: 390px; /* Set width to 100% of the viewport width */
+    height: 140vw; /* Maintain aspect ratio */
+    max-height: 120vh; /* Ensure the pic/slider fits within the viewport height */
     object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+  .title {
+    margin-top: 4rem;
+    margin-bottom: auto;
   }
 
   .cover-pic-text-article {
     position: absolute;
-    bottom: 20%;
+    bottom: 100%;
     left: 100%; /* Center the text horizontally */
     transform: translateX(-50%);
-    text-align: center;
+    margin-bottom: 5rem;
     width: 100%; /* Ensure the text container spans the entire width of the cover pic */
     max-width: 80%; /* Limit the width of the text container */
   }
@@ -56,7 +67,7 @@
     display: flex;
      /* Adjust as needed */
     transform: translate(-50%, -50%); /* Center the container */
-    text-align: center; /* Center text horizontally */
+    
     
 }
   .cover-pic-text-article{
@@ -68,13 +79,18 @@
     flex-wrap: wrap;
   }
 
+  /*clients*/
+  .client-pic{
+    max-width:380px;
+  }
+
 
   /*plans section*/
   .plans-container{
     flex-wrap: wrap;
   }
   .plan-card{
-    margin-left: 2rem;
+    margin-left: auto;
   }
 
 
